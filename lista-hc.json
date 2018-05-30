@@ -1,16 +1,26 @@
 [
 	{
-		"date": "2018-05-15",
+		"date": "2018-05-28",
 		"minister": "gilmar-mendes",
-		"title": "Milton Lyra, suposto operador do MDB",
-		"political-party": "mdb",
-		"source": "http://www.jb.com.br/pais/noticias/2018/05/15/gilmar-mendes-manda-soltar-milton-lyra-suposto-operador-do-mdb/"
+		"title": "Ex-secretário e doleiro presos na Lava Jato",
+		"description": "Foram soltos o ex-secretário de Administração Penitenciária do Rio César Rubens de Carvalho e o doleiro Sérgio Roberto Pinto da Silva, alvos da Operação Pão Nosso",
+		"political-party": "",
+		"source": "http://politica.estadao.com.br/blogs/fausto-macedo/gilmar-manda-soltar-mais-dois-da-lava-jato/"
 	},
 	{
-		"date": "2018-05-15",
+		"date": "2018-05-23",
 		"minister": "gilmar-mendes",
-		"title": "Milton Lyra, suposto operador do MDB",
-		"political-party": "mdb",
-		"source": "http://www.jb.com.br/pais/noticias/2018/05/15/gilmar-mendes-manda-soltar-milton-lyra-suposto-operador-do-mdb/"
+		"title": "Empresário Arthur Mário Pinheiro Machado, suspeito de envolvimento em fraudes em fundos de pensão",
+		"description": "Machado foi preso em abril na Operação Rizoma, desdobramento da Lava Jato no Rio de Janeiro, por determinação do juiz Marcelo Bretas",
+		"political-party": "",
+		"source": "https://noticias.uol.com.br/politica/ultimas-noticias/2018/05/23/gilmar-mendes-manda-soltar-empresario-suspeito-de-envolvimento-em-fraudes-em-fundos-de-pensao.htm"
+	},
+	{
+		"date": "2018-05-23",
+		"minister": "gilmar-mendes",
+		"title": "Hudson Braga, ex-secretário de Obras, e Carlos Miranda, ex-assessor do governo Sérgio Cabral (MDB) no Rio",
+		"description": "Os dois foram presos na Operação Calicute, da Polícia Federal, em novembro de 2016, junto com o ex-governador",
+		"political-party": "",
+		"source": "https://g1.globo.com/politica/noticia/gilmar-mendes-manda-soltar-secretario-do-governo-cabral-apos-um-ano-e-meio-de-prisao.ghtml"
 	}
 ]
