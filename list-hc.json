@@ -16,6 +16,14 @@
 		"source": "https://noticias.r7.com/brasil/stf-manda-soltar-condenado-por-morte-de-dorothy-stang-25052018"
 	},
 	{
+		"date": "2018-05-24",
+		"minister": "gilmar-mendes",
+		"title": "Sandro Alex Lahmann e Carlos Mateus Martins, presos em março deste ano durante a Operação Pão Nosso",
+		"description": "Operação Pão Nosso, que apura irregularidades no sistema penitenciário do Rio de Janeiro e é um dos desdobramentos da Operação Lava-Jato no estado",
+		"political-party": "",
+		"source": "https://oglobo.globo.com/brasil/gilmar-manda-soltar-mais-dois-presos-por-bretas-na-operacao-pao-nosso-22713825"
+	},
+	{
 		"date": "2018-05-23",
 		"minister": "gilmar-mendes",
 		"title": "Empresário Arthur Mário Pinheiro Machado, suspeito de envolvimento em fraudes em fundos de pensão",
@@ -46,6 +54,22 @@
 		"description": "A quadrilha, segundo a Polícia Federal, traficava drogas, contrabandeava armas, desviava insumos químicos e lavava dinheiro entre cinco países",
 		"political-party": "",
 		"source": "https://www.opovo.com.br/jornal/cidades/2018/05/stf-manda-soltar-11-narcotraficantes-condenados-no-ceara.html"
+	},
+	{
+		"date": "2018-05-15",
+		"minister": "gilmar-mendes",
+		"title": "Acusados de desvios em fundos de pensão",
+		"description": "Segundo as investigações, valores dos fundos de pensão eram enviados para empresas no exterior, gerenciadas por um operador financeiro",
+		"political-party": "",
+		"source": "https://www.conjur.com.br/2018-mai-19/gilmar-mendes-manda-soltar-acusados-desvios-fundos-pensao"
+	},
+	{
+		"date": "2018-05-15",
+		"minister": "gilmar-mendes",
+		"title": "Milton Lyra, suposto operador do MDB",
+		"description": "Lyra é apontado pela PF como lobista do MDB em um bilionário esquema de fraudes com recursos de fundos de pensão Postalis, dos Correios, e no Serpros",
+		"political-party": "MDB",
+		"source": "http://www.jb.com.br/pais/noticias/2018/05/15/gilmar-mendes-manda-soltar-milton-lyra-suposto-operador-do-mdb/"
 	},
 	{
 		"date": "2018-05-11",
