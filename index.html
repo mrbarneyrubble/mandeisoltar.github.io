@@ -1,1 +1,103 @@
-Hey Fred!
+<!doctype html>
+<html lang="pt-br" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mandei Soltar - Coletânia de notícias sobre Habeas Corpus do STF</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="css/default.min.css">
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/frst-timeline-style-4.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
+</head>
+
+<body>
+    <div id="page">        
+        <div class="frst-container content-alternate">
+            <!-- frst-left-align/frst-right-align/frst-alternate/frst-date-opposite-->
+            <div class="frst-timeline frst-timeline-style-4 frst-alternate">
+                <div class="frst-timeline-block frst-timeline-label-block" data-animation="slideInUp">
+                    <div class="frst-labels frst-start-label"> <span>Mandei soltar...</span> </div>
+                    <!-- .frst-start-label -->
+                </div>
+                <!-- frst-timeline-block -->
+                <div v-for="(item, index) in items" 
+                     :class="[{'frst-odd-item': index%2==0, 'frst-even-item': index%2!=0},colorSelected()]"
+                     class="frst-timeline-block" data-animation="slideInUp">
+                    <div class="frst-timeline-img"> <span></span> </div>
+                    <!-- frst-timeline-img -->
+                    <div class="frst-timeline-content">
+                        <div class="frst-timeline-content-inner">
+                            <div class="side-border">
+                                <h2>{{parseDate(item.date)}}</h2>
+                            </div>
+                            <div class="icon-section"> 
+                                <i class="fa fa-2x" aria-hidden="true">
+                                    <img :src="'images/'+item.minister+'.jpg'" />
+                                </i> 
+                            </div>
+                            <h2><a :href="item.source" target="_blank">{{item.title}}</a></h2>
+                            <p> 
+                                {{item.description}}
+                            </p>
+                        </div>
+                        <!-- frst-timeline-content-inner -->
+                    </div>
+                    <!-- frst-timeline-content -->
+                </div>
+                <!-- frst-timeline-block -->
+            </div>
+            <!-- frst-timeline -->
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.0.6/jquery.mousewheel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"></script>
+    <script src="js/frst-timeline.js"></script>
+    <script src="js/date.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
+    <script>        
+		(function($){
+			$("#side-menu-content").mCustomScrollbar({
+				theme:"rounded-dots",
+				scrollInertia:800
+			});
+
+            const initialData = () => {
+                return {
+                    items: null
+                }
+            }
+            new Vue({
+                el: '#page',
+                data: initialData,
+                created: function () {
+                    this.fetchData();
+                },
+                methods: {
+                    fetchData: function () {
+                        var self = this;
+                        $.getJSON('https://raw.githubusercontent.com/mrbarneyrubble/mrbarneyrubble.github.io/master/lista-hc.json', function (data) {
+                            self.items = data;
+                        });
+                    },
+                    colorSelected: function () {
+                        var colors = ['aqua-blue', 'red', 'light-green', 'orange','aqua-blue', 'red', 'light-green', 'orange'];
+                        return colors[Math.floor(Math.random() * colors.length)];
+                    },
+                    parseDate: function(dt){
+                        return new Date(dt).toString('dd/MM/yyyy')
+                    }
+                }
+            });
+        })(jQuery);
+
+    </script>
+</body>
+
+</html>
